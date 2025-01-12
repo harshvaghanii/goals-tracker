@@ -42,12 +42,14 @@ This is used to run the react app image which is `goals-tracker-frontend` in a c
 
 - Make sure you have Docker desktop installed and you're running docker daemon
 
-- Clone this repository using ```git clone https://github.com/harshvaghanii/goals-tracker.git```
+- Clone this repository using ```bash
+git clone https://github.com/harshvaghanii/goals-tracker.git```
 
 - I've added some shell files that should take care of setting up everything in docker desktop, make sure you make them executable using `chmod +x <file_name>`
 
 - Make sure you're in the root directory of the repository
 
-- Run the docker shell file using ```bash ./docker.sh```
+- Run the docker shell file using ```bash 
+./docker.sh```
 
 - Feel free to let me know if there are any issues running the file
