@@ -48,6 +48,6 @@ This is used to run the react app image which is `goals-tracker-frontend` in a c
 
 - Make sure you're in the root directory of the repository
 
-- Run the docker shell file using ```./docker.sh```
+- Run the docker shell file using ```bash ./docker.sh```
 
 - Feel free to let me know if there are any issues running the file
