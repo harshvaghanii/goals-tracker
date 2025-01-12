@@ -56,4 +56,6 @@ git clone https://github.com/harshvaghanii/goals-tracker.git
 ./docker.sh
 ```
 
+- The App should be accessible on `localhost:3000`
+
 - Feel free to let me know if there are any issues running the file
