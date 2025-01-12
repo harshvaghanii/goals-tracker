@@ -26,6 +26,10 @@ app.use((req, res, next) => {
   next();
 });
 
+app.get("/", (req, res) => {
+  res.send("Working...");
+})
+
 app.get('/goals', async (req, res) => {
   console.log('TRYING TO FETCH GOALS');
   try {
@@ -84,7 +88,7 @@ app.delete('/goals/:id', async (req, res) => {
 });
 
 mongoose.connect(
-  'mongodb://localhost:27017/course-goals',
+  'mongodb://mongo-goals-tracker-container/course-goals',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
