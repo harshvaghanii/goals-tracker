@@ -18,8 +18,8 @@ git clone https://github.com/harshvaghanii/goals-tracker.git
 - If you're on the root directory of this repository, you can use the below commands to make the script executable. `(The last one is optional).`
 
 ```bash
-chmod +x /backend/docker-build.sh
-chmod +x /frontend/docker-build.sh
+chmod +x ./backend/docker-build.sh
+chmod +x ./frontend/docker-build.sh
 chmod +x docker.sh
 chmod +x docker-terminate.sh
 chmod +x dependency.sh
