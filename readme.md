@@ -1,6 +1,6 @@
 ## ***Dockerizing a MERN Stack APP***
 
-#### Hey Guys, this project is about dockerizing a simple MERN stack app that has a basic functionality of CREATE, READ and DELETE. It is a Goals Tracker App, where you can simply add some goals and delete them by clicking on the list. The main intention of this project was to learn the process of creating docker images and running them in different containers while maintaing communication between these containers and also persisting storage using MongoDB.
+#### Hey Guys, this project is about dockerizing a simple MERN stack app that has a basic functionality of CREATE, READ and DELETE. It is a Goals Tracker App, where you can simply add some goals and delete them by clicking on the list. The main intention of this project was to learn the process of creating docker images and running them in different containers while maintaing communication between these containers and also persisting storage in MongoDB using Docker Volumes.
 
 ---
 
