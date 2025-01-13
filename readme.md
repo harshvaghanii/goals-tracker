@@ -25,6 +25,12 @@ chmod +x docker-terminate.sh
 chmod +x dependency.sh
 ```
 
+- Creating a docker network named goals-tracker
+
+```bash
+docker network create goals-tracker
+```
+
 - Make sure you're in the root directory of the repository
 
 - Run the docker shell file using
