@@ -56,6 +56,8 @@ git clone https://github.com/harshvaghanii/goals-tracker.git
 ./docker.sh
 ```
 
+- This will download the `mongo:latest` image from official docker hub and will build the `backend` as well as the `frontend` images. It will then run these images in a container.
+
 - The App should be accessible on `localhost:3000`
 
 - To stop the application, run the following script while making sure you're in the root directory of the repository
