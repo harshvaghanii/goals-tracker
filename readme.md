@@ -63,4 +63,6 @@ git clone https://github.com/harshvaghanii/goals-tracker.git
 ./docker-terminate.sh
 ```
 
+- The `docker-terminate` script will also delete the 3 images that were downloaded for this project. You can reinstall them anytime by running `./docker.sh`. However, this will take some time since it installs `mongo` image and also rebuilds the `frontend` and the `backend` image every single time. If you don't wish to modify the code, feel free to comment all the lines that start with `docker rmi` in the `docker-terminate` script and this will ensure not deleting the image.
+
 - Feel free to let me know if there are any issues running the file
