@@ -58,4 +58,9 @@ git clone https://github.com/harshvaghanii/goals-tracker.git
 
 - The App should be accessible on `localhost:3000`
 
+- To stop the application, run the following script while making sure you're in the root directory of the repository
+```bash
+./docker-terminate.sh
+```
+
 - Feel free to let me know if there are any issues running the file
