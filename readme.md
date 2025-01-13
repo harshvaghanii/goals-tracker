@@ -4,6 +4,48 @@
 
 ---
 
+### Steps to Clone and Run this app
+
+- Make sure you have Docker desktop installed and running on your system
+
+- Clone this repository using 
+```bash
+git clone https://github.com/harshvaghanii/goals-tracker.git
+```
+
+- I've added some shell files that should take care of setting up everything in docker desktop, make sure you make them executable using `chmod +x <file_name>`
+
+- If you're on the root directory of this repository, you can use the below commands to make the script executable. `(The last one is optional).`
+
+```bash
+chmod +x /backend/docker-build.sh
+chmod +x /frontend/docker-build.sh
+chmod +x docker.sh
+chmod +x docker-terminate.sh
+chmod +x dependency.sh
+```
+
+- Make sure you're in the root directory of the repository
+
+- Run the docker shell file using
+```bash 
+./docker.sh
+```
+
+- This will download the `mongo:latest` image from official docker hub and will build the `backend` as well as the `frontend` images. It will then run these images in a container.
+
+- The App should be accessible on `localhost:3000`
+
+- To stop the application, run the following script while making sure you're in the root directory of the repository
+```bash
+./docker-terminate.sh
+```
+
+- The `docker-terminate` script will also delete the 3 images that were downloaded for this project. You can reinstall them anytime by running `./docker.sh`. However, this will take some time since it installs `mongo` image and also rebuilds the `frontend` and the `backend` image every single time. If you don't wish to modify the code, feel free to comment all the lines that start with `docker rmi` in the `docker-terminate` script and this will ensure not deleting the image.
+
+- Feel free to let me know if there are any issues running the file
+
+
 ### Docker Commands Used (Along with description)
 
 ```bash
@@ -35,36 +77,3 @@ docker run -d -p 3000:3000 --name goals-tracker-fe-container --rm --network goal
 ```
 
 This is used to run the react app image which is `goals-tracker-frontend` in a container named `goals-tracker-fe-container` on detached mode. It allows access to `PORT 3000` of the docker virtual machine from the localhost. The `--rm` flag deleted the container when it is stopped.
-
----
-
-### Steps to Clone and Run this app
-
-- Make sure you have Docker desktop installed and you're running docker daemon
-
-- Clone this repository using 
-```bash
-git clone https://github.com/harshvaghanii/goals-tracker.git
-```
-
-- I've added some shell files that should take care of setting up everything in docker desktop, make sure you make them executable using `chmod +x <file_name>`
-
-- Make sure you're in the root directory of the repository
-
-- Run the docker shell file using
-```bash 
-./docker.sh
-```
-
-- This will download the `mongo:latest` image from official docker hub and will build the `backend` as well as the `frontend` images. It will then run these images in a container.
-
-- The App should be accessible on `localhost:3000`
-
-- To stop the application, run the following script while making sure you're in the root directory of the repository
-```bash
-./docker-terminate.sh
-```
-
-- The `docker-terminate` script will also delete the 3 images that were downloaded for this project. You can reinstall them anytime by running `./docker.sh`. However, this will take some time since it installs `mongo` image and also rebuilds the `frontend` and the `backend` image every single time. If you don't wish to modify the code, feel free to comment all the lines that start with `docker rmi` in the `docker-terminate` script and this will ensure not deleting the image.
-
-- Feel free to let me know if there are any issues running the file
